@@ -1,11 +1,23 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import {
+  Container,
+  ContainerDecoration,
+  Decoration,
+  Logo,
+  Copy,
+} from './styles';
 
+import DecorationImage from '../../assets/images/decoration.png';
+import LogoImage from '../../assets/images/logo.png';
 const Launcher = () => {
   return (
-    <View>
-      <Text>Launcher</Text>
-    </View>
+    <Container colors={['#F99F00', '#DB3069']}>
+      <ContainerDecoration>
+        <Decoration source={DecorationImage} resizeMode="stretch" />
+        <Logo source={LogoImage} resizeMode="contain" />
+        <Copy>Copyright © 2017</Copy>
+      </ContainerDecoration>
+    </Container>
   );
 };
 
