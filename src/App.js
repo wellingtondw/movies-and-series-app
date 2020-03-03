@@ -8,9 +8,10 @@ if (__DEV__) {
 }
 
 const App = () => {
+  console.tron.log('Hello there!');
   return (
     <View>
-      <Text>Hello World</Text>
+      <Text>Hello T</Text>
     </View>
   );
 };
