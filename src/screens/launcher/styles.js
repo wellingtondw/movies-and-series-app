@@ -21,7 +21,7 @@ export const Logo = styled.Image`
   width: 108px;
   height: 135px;
   position: absolute;
-  top: 20%;
+  top: 100px;
 `;
 
 export const Copy = styled.Text`
