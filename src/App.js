@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text } from 'react-native';
+import Routes from './routes';
 
 if (__DEV__) {
   import('../ReactotronConfig').then(() =>
@@ -9,11 +10,7 @@ if (__DEV__) {
 
 const App = () => {
   console.tron.log('Hello there!');
-  return (
-    <View>
-      <Text>Hello T</Text>
-    </View>
-  );
+  return <Routes />;
 };
 
 export default App;
