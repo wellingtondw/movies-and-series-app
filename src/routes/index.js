@@ -3,6 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import Launcher from '../screens/launcher';
+import WalkthroughOne from '../screens/walkthrough';
 
 const Stack = createStackNavigator();
 
@@ -13,6 +14,11 @@ const Routes = () => {
         <Stack.Screen
           name="Launcher"
           component={Launcher}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Walkthrough"
+          component={WalkthroughOne}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
